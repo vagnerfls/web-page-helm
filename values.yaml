@@ -6,4 +6,4 @@ application:
   service:
     type: LoadBalancer
   ingress:
-    enabled: false
+    enabled: true
