@@ -8,8 +8,8 @@ spec:
   selector:
     app: {{.Release.Name}}-web-page
   ports:
-    - port: 7900
-      targetPort: 7900
+    - port: 80
+      targetPort: 80
   type: {{.Values.application.service.type}}  
   
   
