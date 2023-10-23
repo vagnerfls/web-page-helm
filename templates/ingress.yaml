@@ -18,5 +18,5 @@ spec:
               service:
                 name: {{.Release.Name}}-svc
                 port:
-                  number: 8081
+                  number: 7900
 {{end}}
