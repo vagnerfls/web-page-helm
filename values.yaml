@@ -7,3 +7,4 @@ application:
     type: LoadBalancer
   ingress:
     enabled: true
+  port: 7900

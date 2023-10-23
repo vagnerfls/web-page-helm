@@ -18,5 +18,5 @@ spec:
               service:
                 name: {{.Release.Name}}-svc
                 port:
-                  number: 80
+                  number: {{.Values.application.port}}
 {{end}}
