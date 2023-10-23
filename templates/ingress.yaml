@@ -1,0 +1,21 @@
+{{if .Values.application.ingress.enabled}}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{.Release.Name}}-ingress
+
+spec:
+  ingressClassName: nginx
+
+  rules:
+    - host: web-page.localhost
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: {{.Release.Name}}-svc
+                port:
+                  number: 80
+{{end}}
