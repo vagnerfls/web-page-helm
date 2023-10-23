@@ -1,7 +1,0 @@
-application:
-  replicas: 1
-  image:
-    name: fabricioveronez/web-page
-    tag: blue
-  service:
-    type: ClusterIP

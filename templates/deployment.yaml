@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{.Release.Name}}-web-page
-  
+  namespace: helm
 
 spec:
   replicas: {{ .Values.application.replicas }}
