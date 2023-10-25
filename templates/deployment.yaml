@@ -8,6 +8,7 @@ metadata:
     prometheus.io/port: "80"
     prometheus.io/path: "/metrics"  
 
+
 spec:
   replicas: {{ .Values.application.replicas }}
   selector:
