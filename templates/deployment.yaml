@@ -3,6 +3,10 @@ kind: Deployment
 metadata:
   name: {{.Release.Name}}-web-page
   namespace: helm
+  annotations: 
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "80"
+    prometheus.io/path: "/metrics"  
 
 spec:
   replicas: {{ .Values.application.replicas }}
